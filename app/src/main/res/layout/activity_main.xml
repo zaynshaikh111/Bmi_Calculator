@@ -32,6 +32,13 @@
         android:layout_height="wrap_content"
         android:text="Calculate BMI" />
 
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Reset"/>
+
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
@@ -42,5 +49,60 @@
         android:textColor="@color/colorPrimary"
         android:textSize="24dp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#5E35B1"
+        android:text="0 - 15  > Very Severely UnderWeight"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#8447FF"
+        android:text="15 - 16  > Severely UnderWeight"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="16 - 18.5  > UnderWeight"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00FF0B"
+        android:text="18.5 - 25  > Healthy"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="25 - 30  >  OverWeight"
+        android:textColor="#FFB300"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#FB8C00"
+        android:text="30 - 35  >  Obese class I"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="35 - 40  >  Obese class II"
+        android:textColor="#E53935"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="40 - 45  >  Obese class III"
+        android:textSize="20dp"
+        android:textColor="#FF0600"/>
 
 </LinearLayout>
