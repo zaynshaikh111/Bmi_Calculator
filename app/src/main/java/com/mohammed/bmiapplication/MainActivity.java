@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity
 
     EditText height,weight;
     TextView result;
-    Button calculate;
+    Button calculate,reset;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity
         weight = (EditText) findViewById(R.id.weight);
         result = (TextView) findViewById(R.id.result);
         calculate = (Button) findViewById(R.id.calculate);
+        reset = (Button) findViewById(R.id.reset);
 
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +33,20 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                reset();
+            }
+        });
+
+    }
+
+    private void reset()
+    {
+        height.setText(null);
+        weight.setText(null);
+        result.setText(null);
     }
     private void calculateBMI()
     {
